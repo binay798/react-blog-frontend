@@ -1,0 +1,70 @@
+.contact {
+    padding: 5rem;
+
+    &__top {
+        margin-bottom: 6rem;
+        & > h2 {
+            font-size: 2.5rem;
+            color: rgb(77, 74, 74);
+            font-family: 'Libre Baskerville', serif;
+            margin-bottom: 3rem;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+            gap: 2rem;
+
+            & > div {
+                box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+                flex: 1;
+                min-height: 15rem;
+                padding: 2rem;
+                border-radius: 10px;
+                font-size: 1.6rem;
+                color: rgb(102, 98, 98);
+            }
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: repeat(2,1fr);
+
+        &__left {
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+            border-radius: 1rem;
+            padding: 3rem;
+
+            & > input {
+                margin-bottom: 2rem;
+            }
+
+            &__textarea {
+                
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 1rem;
+                border: 1px solid lightgray;
+                font-style: inherit;
+                font-size: 1.6rem;
+                font-family: inherit;
+                color: gray;
+                outline: none;
+                margin-bottom: 2rem;
+
+                &:focus {
+                    border: 1px solid #928888;
+
+                }
+
+                &::-webkit-input-placeholder {
+                    font-style: inherit;
+                    color: inherit;
+                }
+            }
+        }
+    }   
+}

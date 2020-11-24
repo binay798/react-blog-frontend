@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Layout from './hoc/Layout/Layout'
+import Homepage from './containers/Homepage/Homepage'
+import { Route, Switch } from 'react-router';
+import Auth from './containers/Auth/Auth';
+import Profile from './containers/Profile/Profile';
+import Contact from './containers/Contact/Contact'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function app() {
+    return (
+        <Layout>
+            <Switch>
+                <Route path='/contact' component={Contact} />
+                <Route path='/profile' component={Profile} />
+                <Route path='/accounts' component={Auth} />
+                <Route path='/' component={Homepage} />
+            </Switch>
+            
+
+        </Layout>
+    )
 }
 
-export default App;
+export default app

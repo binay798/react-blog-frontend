@@ -1,0 +1,79 @@
+.layout {
+    height: 100vh;
+    display: flex;
+
+    &__left {
+        position: sticky;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 35rem;
+        // background: coral;
+        border-right: 1px solid lightgray;
+        padding: 1rem 0;
+    }
+
+    &__right {
+        // padding: 1rem;
+        height: 100vh;
+        overflow-y: scroll;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            width: 1rem;
+            background: rgb(235, 233, 233);
+        }
+        &::-webkit-scrollbar-thumb {
+            background: rgb(196, 182, 182);
+            border-radius: 2.5rem;
+        }
+
+
+        
+    }
+}
+
+.userProfile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: .5rem;
+
+    &:link,&:visited {
+        text-decoration: none;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+    img {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    span {
+        display: block;
+        font-size: 1.4rem;
+        font-family: 'Libre Baskerville', serif;
+        font-style: italic;
+    }
+}
+
+.newsletter {
+    margin-top: 2rem;
+    padding: 2rem;
+
+    &__heading {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.logo {
+    display: block;
+    object-fit: contain;
+    width: 80%;
+}

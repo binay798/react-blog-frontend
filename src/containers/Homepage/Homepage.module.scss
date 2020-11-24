@@ -1,0 +1,60 @@
+.homepage {
+    display: flex;
+
+    &__left {
+        flex: 2;
+        // background-color: coral;
+        padding: 5rem 4rem;
+        min-height: 100vh;
+        
+
+    }
+
+    &__blog {
+        display: grid;
+        grid-gap: 6rem;
+
+    }
+
+    &__pagination {
+        margin-top: 4rem;
+    }
+
+    &__right{
+        flex: 1;
+        background-color: rgb(241, 238, 238);
+        padding: 5rem 1rem;
+        min-height: 100vh;
+
+        .categories {
+            margin-bottom: 3rem;
+            & > h3 {
+                font-size: 2rem;
+                font-family: 'Libre Baskerville', serif;
+                color: rgb(97, 96, 96);
+                font-weight: 500;
+                margin-bottom: 2rem;
+            }
+
+            &__list {
+                list-style: none;
+
+                li {
+                    font-size: 1.6rem;
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid lightgray;
+                    }
+
+                    & > a:link,a:visited {
+                        text-decoration: none;
+                        color: currentColor;
+                        display: block;
+                        padding:1rem 2rem;
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.button {
+
+    &:link,&:visited {
+        text-decoration: none;
+        display: block;
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: 600;
+        margin: 1rem 0;
+
+       
+    }
+}
