@@ -1,0 +1,37 @@
+.skeleton {
+
+    &  span {
+        margin: 10px 0;
+        display: block;
+    }
+
+    & > div {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        & > span {
+            display: block;
+        }
+    }
+}
+
+.latestPost {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    & > span {
+        display: block;
+        
+        flex: 1;
+    }
+
+    & > div {
+        width: 100%;
+        span {
+            display: block;
+            margin: 1rem;
+        }
+    }
+}

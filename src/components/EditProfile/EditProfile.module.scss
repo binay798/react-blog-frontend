@@ -1,0 +1,29 @@
+.profile {
+    padding: 5rem;
+    font-size: 1.6rem;
+    color: rgb(104, 102, 102);
+    max-width: 75rem;
+    
+
+    & > h2 {
+        font-weight: 500;
+        margin-bottom: 4rem;
+    }
+
+    &__container {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(2,1fr);
+
+        & > *:last-child {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    .form {
+
+        &__group {
+
+        }
+    }
+}

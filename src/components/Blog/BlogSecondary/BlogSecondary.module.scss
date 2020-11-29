@@ -1,0 +1,53 @@
+.blog {
+    padding: 2rem 0;
+    border-bottom: 1px solid lightgray;
+    
+
+    &__container {
+        display: flex;
+        gap: 5rem;
+        font-size: 1.6rem;
+    }
+
+    &__img {
+        display: block;
+        width: 14rem;
+        height: 14rem;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    &__desc {
+
+        & > p {
+            margin-bottom: 1rem;
+        }
+
+        & > h3 {
+            font-size: 2.2rem;
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+
+        &__options {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+
+            & > div {
+                display: flex;
+                gap: 1rem;
+            }
+
+            & > div > span {
+                font-size: 1.2rem;
+            }
+        }
+
+
+    }
+}

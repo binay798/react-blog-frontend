@@ -2,11 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app'
 import './index.css'
-import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
+import axios from './axios/axiosInstance';
+import Store from './store/store'
+
+
 
 const app = (
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+    <Store>
+        <Router>
+            <App />
+        </Router>
+    </Store>
+    
 );
 ReactDOM.render(app,document.getElementById('root'))

@@ -7,4 +7,5 @@ import leopard from './leopard.jpg';
 import mountain from './mountain.jpg';
 import panda from './panda.jpg';
 import squarell from './squarell.jpg';
-export { profile, logo, nature,fox, hawk, leopard, mountain, panda, squarell }
+import profilePic from './profilePic.png'
+export { profile, logo, nature,fox, hawk, leopard, mountain, panda, squarell, profilePic }

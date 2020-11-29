@@ -1,12 +1,13 @@
 import React from 'react'
 import classes from './Button.module.scss';
-import { Link } from 'react-router-dom';
-
+import { withRouter } from 'react-router-dom'
 
 function Button(props) {
+
+    
     return (
-        <Link to='/' className={classes.button} style={props.style} >{props.name}</Link>
+        <button onClick={props.clicked}  className={classes.button} style={props.style} >{props.name}</button>
     )
 }
 
-export default Button
+export default withRouter(Button)

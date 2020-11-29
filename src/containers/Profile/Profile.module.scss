@@ -13,7 +13,7 @@
         &__camera {
             position: absolute;
             right: 0;
-            bottom: 3rem;
+            top: 13rem;
             width: 4rem;
             height: 4rem;
             background-color: white;
@@ -51,15 +51,24 @@
             gap: 4rem;
             font-size: 1.6rem;
             align-items: flex-start;
+
+
+            &__left {
+                
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+
+                & > div:nth-child(odd) {
+                    font-weight: 700;
+                }
+            }
+
+            &__right {
+
+            }
         }
 
-        &__left{
-
-        }
-
-        &__right {
-
-        }
+       
     }
 
     &__bottom {

@@ -1,0 +1,38 @@
+.blog {
+    padding: 5rem;
+
+    & > h2 {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+    }
+
+    &__form {
+        display: grid;
+        gap: 2rem;
+
+        
+
+        & > textarea,select {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid lightgray;
+            font-style: inherit;
+            font-size: 1.6rem;
+            font-family: inherit;
+            color: gray;
+            outline: none;
+
+            &:focus {
+                border: 1px solid #928888;
+        
+            }
+        
+            &::-webkit-input-placeholder {
+                font-style: inherit;
+                color: inherit;
+            }
+        }
+    }
+}
